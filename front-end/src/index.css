@@ -1,15 +1,26 @@
-:root {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
+p {
+  color: white;
+}
+
+::-webkit-scrollbar {
+  background-color: black;
+  border: 0.8px solid rgb(40, 40, 40);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(41, 40, 40);
+  border-radius: 100px;
+}

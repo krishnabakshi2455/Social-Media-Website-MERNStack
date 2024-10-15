@@ -33,14 +33,14 @@ const Authentication: React.FC = () => {
               {actvie === 'login' ? (
                 <>
                   Don't have an account?{' '}
-                  <Button variant="text" onClick={() => handlechange}>
+                  <Button variant="text" onClick={handlechange}>
                     Sign Up
                   </Button>
                 </>
               ) : (
                 <>
                   Have an account?{' '}
-                  <Button variant="text" onClick={() => handlechange}>
+                  <Button variant="text" onClick={handlechange}>
                     Log In
                   </Button>
                 </>

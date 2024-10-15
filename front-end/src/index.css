@@ -10,9 +10,6 @@ body {
   font-weight: 400;
 }
 
-p {
-  color: white;
-}
 
 ::-webkit-scrollbar {
   background-color: black;

@@ -9,9 +9,11 @@
 
 }
 
-.login>form {
+
+.loginForm {
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
 }
 
 .login>img {
@@ -34,12 +36,15 @@
     cursor: pointer;
 }
 
-.login>form>input {
+
+
+.LoginInput {
     background-color: #ffffff24;
     border: 1px solid gray;
     color: white;
     border-radius: 3px;
     padding: 12px;
+    width: 100%;
 }
 
 @media (min-width:300px) and (max-width:450px) {

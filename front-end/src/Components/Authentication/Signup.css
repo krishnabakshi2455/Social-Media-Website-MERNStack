@@ -9,9 +9,10 @@
 
 }
 
-.signup>form {
+.signupForm {
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
 }
 
 .signup>img {
@@ -39,12 +40,15 @@
     display: flex;
     justify-content: center;
 } */
-.signup>form>input {
+
+
+.SignupInput {
     background-color: #ffffff24;
     border: 1px solid gray;
     color: white;
     border-radius: 3px;
     padding: 12px;
+    width: 100%;
 }
 
 .Signup-main-div {

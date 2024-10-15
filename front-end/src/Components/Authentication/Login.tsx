@@ -1,9 +1,10 @@
 import React,{useState} from 'react'
 import './Login.css'
 import { useForm, SubmitHandler } from "react-hook-form"
-import { useSelector, useDispatch } from 'react-redux';
+import {  useDispatch } from 'react-redux';
 import { LogIn } from '../../ReduxFolder/Redux-Authentication-LogIn/Authentication-LogIn-Store';
-import { RootState } from '../../ReduxFolder/store';
+// import { RootState } from '../../ReduxFolder/store';
+
 
 
 // Define the form input types
@@ -17,7 +18,7 @@ const Login: React.FC = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors, isSubmitting }
+    formState: { errors,isSubmitting }
   } = useForm<LoginFormInputs>();
 
   const dispatch = useDispatch();
@@ -31,13 +32,12 @@ const Login: React.FC = () => {
     });
   };
 
-  // Handle form submission
 
+
+  // const LoggedInEmail = useSelector((state: RootState) => state.AuthenticationLogin.email)
+  // const LoogedInPassword = useSelector((state: RootState) => state.AuthenticationLogin.password)
   
-  const LoggedInEmail = useSelector((state: RootState) => state.AuthenticationLogin.email)
-  const LoogedInPassword = useSelector((state: RootState) => state.AuthenticationLogin.password)
-  
-  console.log(`this is loggedinemail ${LoggedInEmail} this is LoggedInpassword ${LoogedInPassword}`);
+  // console.log(`this is loggedinemail ${LoggedInEmail} this is LoggedInpassword ${LoogedInPassword} this data comes from login`);
 
   const [loading, setloading] = useState(false)
   const LoadingToggle = ()=>{
@@ -45,9 +45,9 @@ const Login: React.FC = () => {
   }
 
   const onSubmit: SubmitHandler<LoginFormInputs> = async (data) => {
-    await delay(4);
-    console.log(data);
-    dispatch(LogIn({ email: data.email, password: data.password }));
+    await delay(2);
+    // console.log(data);
+    dispatch(LogIn({ email: data.email, password: data.password })); // this is where the data is send to redux just need to switch it with backend
     setloading(false)
   };
 
@@ -56,38 +56,43 @@ const Login: React.FC = () => {
       <div className='login'>
         {/* <img src={InstaLogo} width={200} className='sidenav__logo' alt="notfound" /> */}
 
-        <form onSubmit={()=>handleSubmit(onSubmit)}>
-          <input
-            placeholder='email'
-            {...register("email", {
-              required: { value: true, message: "This Field Is Required" },
-              minLength: { value: 3, message: "Minimum Length is 3" }
-            })}
-            type="email"
-          />
+        <form onSubmit={handleSubmit(onSubmit)} className='loginForm'>
+          
 
-          <div className='h-6'>
-            {errors.email && <div className='text-red-600 text-sm font-medium'>{errors.email.message}</div>}
+          <div className='h-16'>
+            <input
+              placeholder='email'
+              {...register("email", {
+                required: { value: true, message: "This Field Is Required" },
+                minLength: { value: 3, message: "Minimum Length is 3" }
+              })}
+              type="email"
+              className='LoginInput'
+            />
+            {errors.email && <p className='text-red-600 text-sm font-medium'>{errors.email.message}</p>}
           </div>
 
-          <input
-            placeholder='Password'
-            {...register("password", {
-              required: { value: true, message: "This Field Is Required" },
-              minLength: { value: 6, message: "Minimum Length is 6" }
-            })}
-            type="password"
-          />
+          
 
-          <div className='h-6'>
-            {errors.password && <div className='text-red-600 text-sm font-medium'>{errors.password.message}</div>}
+          <div className='h-16'>
+            <input
+              placeholder='Password'
+              {...register("password", {
+                required: { value: true, message: "This Field Is Required" },
+                minLength: { value: 6, message: "Minimum Length is 6" }
+              })}
+              type="password"
+              className='LoginInput'
+            />
+            
+            {errors.password && <p className='text-red-600 text-sm font-medium'>{errors.password.message}</p>}
           </div>
 
-          <button disabled={isSubmitting} onClick={()=>LoadingToggle} className='submitbtnl' type='submit'>
+          <button onClick={LoadingToggle} disabled={isSubmitting} className='submitbtnl' type='submit'>
             Log In
           </button>
           {/* {isSubmitting && <div className='text-green-700'>Loading...</div>} */}
-          {loading? <div className='text-green-700'>Loading...</div>:""}
+          {loading? <p className='text-yellow-500'>Loading...</p>:""}
         </form>
       </div>
     </>

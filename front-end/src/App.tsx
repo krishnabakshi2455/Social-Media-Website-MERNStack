@@ -16,17 +16,18 @@ const App: React.FC = () => {
 
   console.log(`this is sign up email (${SingUemail}) this is sign up password (${SingUppassword}) this is sign up username (${SingUpUsername}) this data comes from app component`);
 
-  const LoginEmail = useSelector((state: RootState) => state.AuthenticationLogin.email)
+  // const LoginEmail = useSelector((state: RootState) => state.AuthenticationLogin.email)
 
-  const Loginpassword = useSelector((state: RootState) => state.AuthenticationLogin.password)
+  // const Loginpassword = useSelector((state: RootState) => state.AuthenticationLogin.password)
 
   // console.log(`this is login email (${LoginEmail}) this is login password (${Loginpassword})  this data comes from app component`);
 
   return (
     <>
-      {
+    <Home/>
+      {/* {
         SingUppassword && SingUppassword && LoginEmail && Loginpassword ? <Home /> : <Authentication />
-      }
+      } */}
     </>
   )
 }

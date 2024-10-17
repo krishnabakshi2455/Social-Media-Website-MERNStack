@@ -7,7 +7,7 @@ const MainRoutes:React.FC = () => {
       <>
       <Routes>
           {/* Static route */}
-          <Route path="/" element={<Home />} />
+          <Route path="/post" element={<Home />} />
 
           {/* Dynamic route with user id */}
           {/* <Route path="/" element={<Home />} /> */}

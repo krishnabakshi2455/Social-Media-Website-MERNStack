@@ -1,16 +1,15 @@
 import React from 'react'
 import { Routes,Route } from 'react-router'
-import Home from '../Home/Home'
+import Create from '../Create/Create'
 
 const MainRoutes:React.FC = () => {
   return (
       <>
       <Routes>
           {/* Static route */}
-          <Route path="/post" element={<Home />} />
 
           {/* Dynamic route with user id */}
-          {/* <Route path="/" element={<Home />} /> */}
+          <Route path="/create" element={<Create />} />
 
           {/* Fallback route for unmatched paths */}
           {/* <Route path="*" element={<Home/>} /> */}

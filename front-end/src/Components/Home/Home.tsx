@@ -2,11 +2,15 @@ import React from 'react'
 import Navbar from '../Navbar/NavBar'
 import MainRoutes from '../Main-Routes/MainRoutes'
 
-const Home:React.FC = () => {
+const Home: React.FC = () => {
   return (
     <>
-      <MainRoutes />
-      <Navbar/>
+      <div className='flex'>
+        <div className=''>
+          <Navbar />
+        </div>
+        <MainRoutes />
+      </div>
     </>
   )
 }

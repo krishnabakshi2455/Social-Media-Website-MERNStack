@@ -4,6 +4,8 @@ import { Avatar } from '@mui/material';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider, { Settings } from "react-slick";
+import { Link } from 'react-router-dom';
+
 
 const Following: React.FC = () => {
     const settings: Settings = {
@@ -53,24 +55,24 @@ const Following: React.FC = () => {
                     </div>
                 ))} */}
 
-                <div  className="following-last-container" >
+                <div className="following-last-container" >
                     <div className="following-last-container">
-                        <Avatar>K</Avatar>
-                        <p>Krishna</p>
+                        <Link to='/create'><Avatar>K</Avatar></Link>
+                        <Link to='/create'>Krishna</Link>
                     </div>
                 </div>
 
-                <div  className="following-last-container" >
+                <div className="following-last-container" >
                     <div className="following-last-container">
-                        <Avatar>K</Avatar>
-                        <p>Krishna</p>
+                        <Link to='/create'><Avatar>K</Avatar></Link>
+                        <Link to='/create'>Krishna</Link>
                     </div>
                 </div>
 
-                <div  className="following-last-container" >
+                <div className="following-last-container" >
                     <div className="following-last-container">
-                        <Avatar>K</Avatar>
-                        <p>Krishna</p>
+                        <Link to='/create'><Avatar>K</Avatar></Link>
+                        <Link to='/create'>Krishna</Link>
                     </div>
                 </div>
             </Slider>

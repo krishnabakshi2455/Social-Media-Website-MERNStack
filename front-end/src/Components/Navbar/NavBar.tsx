@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
                     <div className='navbar-container' >
 
                         <div className='icon-container '>
-                            <Link to="/Posts" className=' text-white cursor-pointer'><HomeIcon /></Link>
+                            <Link to="/" className=' text-white cursor-pointer'><HomeIcon /></Link>
 
                             <Link to="/Posts" className=' text-white cursor-pointer'><ChatIcon /></Link>
                             <Link to="/Posts" className=' text-white cursor-pointer'><Notification /></Link>
@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
                         </div>
 
                         <div className='navbar-name-container'>
-                            <Link to="/post" className='text-white font-serif cursor-pointer'>Home</Link>
+                            <Link to="/" className='text-white font-serif cursor-pointer'>Home</Link>
 
                             <Link to="/chats" className='text-white font-serif cursor-pointer'>Chats</Link>
                             <Link to="/notification" className='text-white font-serif cursor-pointer'>Notification</Link>

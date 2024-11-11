@@ -1,0 +1,30 @@
+.post-otheraccount-container{
+    width: 100%;
+    height: 12vh;
+}
+.post-main-cover{
+    display: flex;
+    border: 1px solid white;
+    width: 100%;
+    height: 80vh;
+    margin-left: 25%;
+}
+.post-dumy-card{
+    border: 1px solid red;
+    width: 50%;
+    margin-left: 25%;
+    height: 70vh;
+    margin-top: 1rem;
+}
+
+.post-header{
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.post-others{
+    display: flex;
+    gap: 1.3rem;
+    justify-content: end;
+}

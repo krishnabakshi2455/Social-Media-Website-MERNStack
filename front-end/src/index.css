@@ -4,20 +4,46 @@
 
 body {
   background-color: #242424;
-  color: rgba(255, 255, 255, 0.87);
+  /* color: rgb(2, 2, 255); */
+  color: white;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 600;
+}
+.special-icon-1{
+  background-color: rgb(2, 2, 255) !important;
+  /* rgba(3, 3, 195, 0.814) */
+}
+.nav-css{
+  color: white;
+  transition: 0.3s ease;
+}
+.nav-css:hover{
+  color: rgb(2, 2, 255);
+  transition: 0.3s ease;
+}
+/* For WebKit browsers (Chrome, Safari, etc.) */
+*::-webkit-scrollbar {
+  width: 12px;
+  /* Scrollbar width */
 }
 
-
-::-webkit-scrollbar {
+*::-webkit-scrollbar-track {
   background-color: black;
-  border: 0.8px solid rgb(40, 40, 40);
-  border-radius: 100px;
+  /* Outer part (track) */
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: rgb(41, 40, 40);
-  border-radius: 100px;
+*::-webkit-scrollbar-thumb {
+  background-color: blue;
+  /* Inner button (thumb) */
+  border-radius: 100%;
+  /* Optional: smooth rounded thumb */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  /* Scrollbar width */
+  scrollbar-color: blue black;
+  /* Inner button (thumb) | Outer part (track) */
 }

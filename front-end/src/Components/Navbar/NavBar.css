@@ -1,5 +1,5 @@
 .navbar-main-div {
-    border-right: 1px solid grey;
+    border-right: 1px solid rgba(3, 3, 195, 0.814);
     width: 16vw;
     display: flex;
     align-items: flex-start;
@@ -41,7 +41,7 @@
 
 @media (min-width:300px) and (max-width:400px) {
     .navbar-main-div {
-        border-top: 1px solid grey;
+        border-top: 1px solid rgba(3, 3, 195, 0.814);
         border-right: none;
         width: 100vw;
         display: flex;
@@ -79,7 +79,7 @@
 
 @media (min-width:401px) and (max-width:580px) {
     .navbar-main-div {
-        border-top: 1px solid grey;
+        border-top: 1px solid rgba(3, 3, 195, 0.814);
         border-right: none;
         width: 100vw;
         display: flex;
@@ -117,7 +117,7 @@
 
 @media (min-width:581px) and (max-width:780px) {
     .navbar-main-div {
-        border-top: 1px solid grey;
+        border-top: 1px solid rgba(3, 3, 195, 0.814);
         border-right: none;
         width: 100vw;
         display: flex;
@@ -155,7 +155,7 @@
 
 @media (min-width:780px) and (max-width:1020px) {
     .navbar-main-div {
-        border-right: 1px solid grey;
+        border-right: 1px solid rgba(3, 3, 195, 0.814);
         width: 16vw;
         display: flex;
         align-items: flex-start;
@@ -193,7 +193,7 @@
 
 @media (min-width:1030px) and (max-width:1240px) {
     .navbar-main-div {
-        border-right: 1px solid grey;
+        border-right: 1px solid rgba(3, 3, 195, 0.814);
         width: 16vw;
         display: flex;
         align-items: flex-start;

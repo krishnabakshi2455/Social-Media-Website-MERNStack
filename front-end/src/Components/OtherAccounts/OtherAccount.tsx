@@ -57,21 +57,21 @@ const Following: React.FC = () => {
 
                 <div className="following-last-container" >
                     <div className="following-last-container">
-                        <Link to='/create'><Avatar>K</Avatar></Link>
+                        <Link to='/create'><Avatar className='special-icon-1'>K</Avatar></Link>
                         <Link to='/create'>Krishna</Link>
                     </div>
                 </div>
 
                 <div className="following-last-container" >
                     <div className="following-last-container">
-                        <Link to='/create'><Avatar>K</Avatar></Link>
+                        <Link to='/create'><Avatar className='special-icon-1'>K</Avatar></Link>
                         <Link to='/create'>Krishna</Link>
                     </div>
                 </div>
 
                 <div className="following-last-container" >
                     <div className="following-last-container">
-                        <Link to='/create'><Avatar>K</Avatar></Link>
+                        <Link to='/create'><Avatar className='special-icon-1'>K</Avatar></Link>
                         <Link to='/create'>Krishna</Link>
                     </div>
                 </div>

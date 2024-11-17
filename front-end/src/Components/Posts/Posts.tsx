@@ -3,7 +3,7 @@ import OtherAccount from '../OtherAccounts/OtherAccount'
 import './Posts.css'
 import { Avatar } from '@mui/material'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import SendIcon from '@mui/icons-material/Send';
+// import SendIcon from '@mui/icons-material/Send';
 import ForumIcon from '@mui/icons-material/Forum';
 
 const Posts: React.FC = () => {
@@ -35,11 +35,11 @@ const Posts: React.FC = () => {
                 <ForumIcon />
               </div>
 
-              <div>
-                <SendIcon />
-              </div>
+              {/* <div> */}
+                {/* <SendIcon /> */}
+              {/* </div> */}
 
-              
+
             </div>
           </div>
 

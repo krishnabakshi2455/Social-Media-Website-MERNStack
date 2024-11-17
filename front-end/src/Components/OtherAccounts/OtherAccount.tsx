@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 const Following: React.FC = () => {
     const settings: Settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 6,

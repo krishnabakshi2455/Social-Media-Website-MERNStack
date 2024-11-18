@@ -14,14 +14,6 @@ body {
   background-color: rgb(2, 2, 255) !important;
   /* rgba(3, 3, 195, 0.814) */
 }
-.nav-css{
-  color: white;
-  transition: 0.3s ease;
-}
-.nav-css:hover{
-  color: rgb(2, 2, 255);
-  transition: 0.3s ease;
-}
 /* For WebKit browsers (Chrome, Safari, etc.) */
 *::-webkit-scrollbar {
   width: 12px;

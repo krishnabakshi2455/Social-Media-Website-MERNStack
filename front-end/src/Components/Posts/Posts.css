@@ -1,14 +1,16 @@
-.post-otheraccount-container{
+.post-otheraccount-container {
     width: 100%;
     height: 12vh;
 }
-.post-main-cover{
+
+.post-main-cover {
     display: flex;
     border: 1px solid white;
     width: 83.8vw;
     height: 83.8vh;
 }
-.post-dumy-card{
+
+.post-dumy-card {
     border: 1px solid red;
     width: 74%;
     margin-left: 15%;
@@ -16,89 +18,95 @@
     margin-top: 1rem;
 }
 
-.post-header{
+.post-header {
     border: 1px solid green;
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
-.post-others{
+
+.post-others {
     display: flex;
     gap: 1.3rem;
     justify-content: end;
 }
 
-@media (min-width:300px) and (max-width:400px){
-.post-main-cover{
-    display: flex;
-    border: 1px solid white;
-    width: 97.8vw;
-    height: 74.7vh;
-}
-.post-otheraccount-container{
-    width: 66%;
-    height: 12vh;
-}
+@media (min-width:300px) and (max-width:400px) {
+    .post-main-cover {
+        display: flex;
+        border: 1px solid white;
+        width: 99.8vw;
+        height: 73.7vh
+    }
+
+    .post-otheraccount-container {
+        width: 66%;
+        height: 12vh;
+    }
 }
 
-@media (min-width:401px) and (max-width:500px){
-.post-main-cover{
-    display: flex;
-    border: 1px solid white;
-    width: 97.8vw;
-    height: 74.7vh;
-}
-.post-otheraccount-container{
-    width: 66%;
-    height: 12vh;
-}
+@media (min-width:401px) and (max-width:500px) {
+    .post-main-cover {
+        display: flex;
+        border: 1px solid white;
+        width: 99.8vw;
+        height: 75.7vh
+    }
+
+    .post-otheraccount-container {
+        width: 66%;
+        height: 12vh;
+    }
 }
 
 
 @media (min-width:501px) and (max-width:600px) {
-.post-main-cover{
-    display: flex;
-    border: 1px solid white;
-    width: 97.8vw;
-    height: 74.7vh;
-}
-.post-otheraccount-container{
-    width: 66%;
-    height: 12vh;
-}
+    .post-main-cover {
+        display: flex;
+        border: 1px solid white;
+        width: 99.8vw;
+        height: 74.7vh;
+    }
+
+    .post-otheraccount-container {
+        width: 66%;
+        height: 12vh;
+    }
 }
 
 @media (min-width:601px) and (max-width:700px) {
-.post-main-cover{
-    display: flex;
-    border: 1px solid white;
-    width: 97.8vw;
-    height: 74.7vh;
-}
-.post-otheraccount-container{
-    width: 66%;
-    height: 12vh;
-}
+    .post-main-cover {
+        display: flex;
+        border: 1px solid white;
+        width: 99.8vw;
+        height: 74.7vh;
+    }
+
+    .post-otheraccount-container {
+        width: 66%;
+        height: 12vh;
+    }
 }
 
 @media (min-width:701px) and (max-width:800px) {
-.post-main-cover{
-    display: flex;
-    border: 1px solid white;
-    width: 97.8vw;
-    height: 72.4vh;
-}
-.post-otheraccount-container{
-    width: 92%;
-    height: 12vh;
-}
-.post-dumy-card{
-    border: 1px solid red;
-    width: 74%;
-    margin-left: 15%;
-    height: 62vh;
-    margin-top: 1rem;
-}
+    .post-main-cover {
+        display: flex;
+        border: 1px solid white;
+        width: 99.8vw;
+        height: 72.4vh;
+    }
+
+    .post-otheraccount-container {
+        width: 92%;
+        height: 12vh;
+    }
+
+    .post-dumy-card {
+        border: 1px solid red;
+        width: 74%;
+        margin-left: 15%;
+        height: 62vh;
+        margin-top: 1rem;
+    }
 
 }
-

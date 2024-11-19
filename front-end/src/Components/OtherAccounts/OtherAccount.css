@@ -4,6 +4,9 @@
     margin-top: 2%;
 }
 
+.slick-prev:before, .slick-next:before{
+    color: orangered !important;
+}
 
 .following-names {
     overflow: hidden;

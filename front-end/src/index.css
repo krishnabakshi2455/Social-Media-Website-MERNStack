@@ -1,17 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import '@shadcn/ui/styles';
 
 body {
-  background-color: #242424;
+  /* background-color: #242424; */
+  background-color: white;
   /* color: rgb(2, 2, 255); */
-  color: white;
+  color: black;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 600;
 }
 .special-icon-1{
-  background-color: rgb(2, 2, 255) !important;
+  /* background-color: rgb(2, 2, 255) !important; */
+  background-color: orangered !important;
   /* rgba(3, 3, 195, 0.814) */
 }
 /* For WebKit browsers (Chrome, Safari, etc.) */

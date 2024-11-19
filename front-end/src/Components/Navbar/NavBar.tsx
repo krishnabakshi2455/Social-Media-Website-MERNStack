@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
 
                         <NavLink
                             to="/create"
-                            className={({ isActive }) => isActive ? 'nav-activecss' : 'flex items-center gap-4'}>
+                            className={({ isActive }) => isActive ? 'nav-activecss' : 'flex items-center gap-4 '}>
                             <AddCircleOutlineIcon />
                             <span className='nav-text'>Create</span>
                         </NavLink>

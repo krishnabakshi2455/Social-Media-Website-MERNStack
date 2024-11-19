@@ -3,10 +3,14 @@ import OtherAccount from '../OtherAccounts/OtherAccount'
 import './Posts.css'
 import { Avatar } from '@mui/material'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-// import SendIcon from '@mui/icons-material/Send';
 import ForumIcon from '@mui/icons-material/Forum';
-
-const Posts: React.FC = () => {
+interface RecipeReviewCardProps {
+  title: string;
+  date: string;
+  image: string;
+  description: string;
+}
+const Posts: React.FC<RecipeReviewCardProps> = () => {
   return (
     <>
       <div>
@@ -17,30 +21,44 @@ const Posts: React.FC = () => {
         <div className='post-main-cover'>
 
           <div className='post-dumy-card'>
-            <div className='post-header'>
-              <Avatar className='special-icon-1'>K</Avatar>
-              <h1>Krishna Bakshi</h1>
-            </div>
+            {/* ================= */}
 
-            <div className='post-content'>
-              <h2>Post content</h2>
-            </div>
+            <div className="card">
+              <div className="cardHeader">
+                <div className="avatar"><Avatar className='special-icon-1'>K</Avatar></div>
+                <div className="cardInfo">
+                  <h3>
+                    {/* {title} */}
+                    this is title
+                    </h3>
+                  <p>
+                    {/* {date} */}
+                    this is date
 
-            <div className='post-others'>
+                  </p>
+                </div>
+              </div>
+              
               <div>
-                <FavoriteBorderIcon />
+                this is reel 
               </div>
 
-              <div>
-                <ForumIcon />
+              <div className="cardContent">
+                <p className="cardText">
+                  {/* {description} */}
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, nobis!
+                </p>
               </div>
-
-              {/* <div> */}
-                {/* <SendIcon /> */}
-              {/* </div> */}
-
-
+              <div className="cardActions">
+                <div className="iconButton"><FavoriteBorderIcon /></div>
+                <div className="iconButton">
+                  <ForumIcon />
+                </div>
+              </div>
             </div>
+            {/* =============== */}
+
+
           </div>
 
         </div>

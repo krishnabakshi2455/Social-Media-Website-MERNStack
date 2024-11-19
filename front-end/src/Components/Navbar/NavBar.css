@@ -1,11 +1,11 @@
 .navbar-main-div {
-    border-right: 1px solid rgba(3, 3, 195, 0.814);
+    border-right: 1px solid orangered;
     width: 16vw;
     display: flex;
     align-items: flex-start;
     gap: 10px;
     height: 100vh;
-    background-color: #242424;
+    background-color: white;
 }
 
 .navbar-container {
@@ -37,11 +37,12 @@
 
 }
 .nav-activecss{
-    color: rgb(2, 2, 255);
+    color: orangered;
     display: flex;
     transition: 0.3s ease-in;
     align-items: center;
     gap: 1rem;
+   transform: scale(1.1)
 }
 
 

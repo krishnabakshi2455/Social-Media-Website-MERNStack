@@ -1,8 +1,7 @@
 import React from 'react'
 import Navbar from '../Navbar/NavBar'
 import MainRoutes from '../Main-Routes/MainRoutes'
-import useCanvasCursor from './hooks/useCanvasCursor '
-
+import { useCanvasCursor } from './hooks/canvasCursor'
 const Home: React.FC = () => {
   useCanvasCursor();
   return (
@@ -11,8 +10,9 @@ const Home: React.FC = () => {
         className="pointer-events-none fixed inset-0"
         id="canvas"
       />
+
       <div className='flex'>
-        
+
         <div className=''>
           <Navbar />
         </div>

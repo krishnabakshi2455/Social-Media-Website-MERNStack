@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import '@shadcn/ui/styles';
+
 
 body {
   /* background-color: #242424; */
@@ -13,7 +13,7 @@ body {
   font-weight: 600;
 }
 .special-icon-1{
-  /* background-color: rgb(2, 2, 255) !important; */
+  background-color: rgb(255, 78, 14);
   background-color: orangered !important;
   /* rgba(3, 3, 195, 0.814) */
 }
@@ -29,16 +29,9 @@ body {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: blue;
+  background-color: orangered;
   /* Inner button (thumb) */
   border-radius: 100%;
   /* Optional: smooth rounded thumb */
 }
 
-/* For Firefox */
-* {
-  scrollbar-width: thin;
-  /* Scrollbar width */
-  scrollbar-color: blue black;
-  /* Inner button (thumb) | Outer part (track) */
-}
